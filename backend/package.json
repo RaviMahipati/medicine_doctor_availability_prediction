@@ -1,0 +1,28 @@
+{
+  "name": "medi",
+  "version": "1.0.0",
+  "description": "Project with Streamlit apps and Node.js servers",
+  "main": "index.js",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "csv-parser": "^3.0.0",
+    "csv-stringify": "^6.5.2",
+    "express": "^4.21.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel streamlit-1 streamlit-2 node-2 node-3",
+    "streamlit-1": "streamlit run app.py --server.port 8503",
+    "streamlit-2": "streamlit run app-1.py --server.port 8504",
+    "node-2": "node server2.js",
+    "node-3": "node server3.js"
+  },
+
+  "license": "ISC"
+}

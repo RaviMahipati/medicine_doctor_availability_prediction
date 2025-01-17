@@ -1,0 +1,70 @@
+// const [isSignIn, setIsSignIn] = useState(true);
+//     const [email, setEmail] = useState('');
+//     const [password, setPassword] = useState('');
+//     const [name, setName] = useState('');
+//     // const role = 'doctor';
+//     const navigate = useNavigate();
+
+//     const handleSignIn = () => setIsSignIn(true);
+//     const handleSignUp = () => setIsSignIn(false);
+
+//     const handleLogin = async (e) => {
+//         e.preventDefault();
+//         const { data, error } = await supabase.auth.signInWithPassword({
+//             email,
+//             password,
+//         });
+    
+//         if (error) {
+//             // Display error for incorrect email/password
+//             alert(`Login Error: ${error.message}`);
+//         } else {
+//             // Verify if the logged-in user is in the doctors table
+//             const { data: doctorData, error: doctorError } = await supabase
+//                 .from('doctors')
+//                 .select('id')
+//                 .eq('id', data.user.id)
+//                 .single();
+    
+//             if (doctorError || !doctorData) {
+//                 // Show error if the user is not a doctor
+//                 alert('No such user exists in the doctor records.');
+//                 await supabase.auth.signOut();  // Log out user immediately
+//             } else {
+//                 // Successful doctor login
+//                 alert(`Welcome, Dr. ${data.user.email}`);
+//                 navigate('/dashboard');
+//             }
+//         }
+//     };
+    
+
+//     const handleSignup = async (e) => {
+//         e.preventDefault();
+
+//         // Sign up the user
+//         const { data, error } = await supabase.auth.signUp({
+//             email,
+//             password,
+//             options: {
+//                 data: { name },
+//             },
+//         });
+
+//         if (error) {
+//             alert(`Signup Error: ${error.message}`);
+//         } else {
+//             // Insert user role into the user_profiles table
+//             const { error: insertError } = await supabase
+//                 .from('doctors')
+//                 .insert([{ id: data.user.id, email, name }]);
+            
+            
+//             if (insertError) {
+//                 alert(`Error saving role: ${insertError.message}`);
+//             } else {
+//                 alert(`Account created for: ${data.user.email}`);
+//                 navigate('/dashboard');
+//             }
+//         }
+//     };

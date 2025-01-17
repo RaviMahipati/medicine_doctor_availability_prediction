@@ -1,0 +1,146 @@
+/* General Reset */
+.every {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #b1ddf8, #5078ee) !important;
+  }
+  
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+    background: rgba(113, 176, 192, 0.6); /* Semi-transparent overlay */
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Header */
+.profile-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Card */
+.profile-card {
+    background: #fffdfd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #9ddfdf;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3e13c0; /* Pink accent color */
+    box-shadow: 0 0 5px rgba(255, 126, 179, 0.5);
+}
+
+/* Read-Only Fields */
+.form-group input[readonly],
+.form-group textarea[readonly] {
+    background: #ffffff;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+.submit-button,
+.update-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #6163e3; /* Pink accent color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover,
+.update-button:hover {
+    background: #7755ff; /* Darker pink on hover */
+    transform: translateY(-3px);
+}
+
+.submit-button:active,
+.update-button:active {
+    transform: translateY(0);
+}
+
+/* Loading and Error States */
+.loading {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: #d9534f; /* Red error color */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .profile-header {
+        font-size: 2rem;
+    }
+
+    .submit-button,
+    .update-button {
+        font-size: 1rem;
+    }
+}

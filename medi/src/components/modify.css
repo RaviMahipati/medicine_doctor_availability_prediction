@@ -1,0 +1,106 @@
+/* General Container */
+.every-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .every-header {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading */
+  .every-loading {
+    text-align: center;
+    color: #1e40af;
+    font-weight: bold;
+  }
+  
+  /* Search Section */
+  .every-search-section {
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .every-search-title {
+    color: #0f4c81;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .every-input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #1e40af;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .every-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .every-button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Add Row Section */
+  .every-add-row-section {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .every-add-row-title {
+    color: #0f4c81;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .every-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1e40af;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Delete Row Section */
+  .every-delete-row-section {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .every-delete-row-title {
+    color: #0f4c81;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .every-results {
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    color: #1e3a8a;
+  }
+  
